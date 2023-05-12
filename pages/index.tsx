@@ -43,9 +43,9 @@ const IndexPage: NextPage<Props> = ({ initialImageUrl }) => {
 export default IndexPage;
 
 // SSR
-// export const getServerSideProps: GetServerSideProps<Props> = async () => {
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
 // SSG
-export const getStaticProps: GetStaticProps<Props> = async () => {
+// export const getStaticProps: GetStaticProps<Props> = async () => {
   const image = await fetchImage();
   return {
     props: {
